@@ -1,0 +1,101 @@
+<html>
+<head>
+<title> Market Farmers | Data Visualizations </title>
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+<link rel="stylesheet" href="marketFarmers.css" />
+</head>
+
+
+
+<body>
+<div class = "container">
+  <div class = "row first">
+    <div class = "six columns">
+      <a href = "i101project.html"><img src = "images/headerLogo.png" style = "width: 312px; height:70px"></a>
+    </div>
+    <div class = "six columns">
+      <table align = "right">
+        <th align = "middle"><a href = "i101project.html" >Home</a></th><th align = "middle"><a href = "research.html" >Research</a></th> <th align = "middle"><a href = "dataviz.html">DataVis</a></th> <th align = "middle"><a href = "SolutionPage1.html">Our Solution</a></th> <th align = "middle"><a href = "PresentationLinkPage.html">Download</a></th>
+      </table>
+    </div>
+  </div>
+  <div class = "row second">
+    <div class = "twelve columns">
+      <h3> Data Visualizations </h3>
+      <p> This is our data vizualizations page. We have included data we collected through our survey as well as vizuals we found from other sources to help maximize the efficiency of our solution design. </p>
+    </div>
+  </div>
+  <div class = "row third">
+      <div class = "twelve columns">
+      <img id = "pic" onclick="likelihood()" src = "DataVis/app_likelyhood.png" height="300px">
+      <p><i>Click the photo to see an alternate visualization</i></p>
+      </div>
+  </div>
+  <div class="row fourth">
+    <div class="twelve columns">
+      <p> This chart shows the how likely the people we surveyed are to use an app to help navigate a farmers market.
+      The data shows that 17% of the 35 people said they were extremely likley to use the app. 24% said they were very likely to use the app.
+      While less then 15% said they were either not very likely or not likely to use the app.</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class = "container">
+  <div class = "row fifth">
+      <div class = "twelve columns">
+      <img id = "photo" onclick = "augmentedReality()" src = "DataVis/Augmented_reality_chart.png" height="300px">
+      <p><i>Click the photo to see an alternate visualization</i></p>
+      </div>
+  </div>
+  <div class = "row sixth">
+    <div class="twelve columns">
+      <p> This pie chart represents the number of people who would use augmented reality in order to check the prices of products at a stand.
+      This data is helpful because we know augmented reality is a feature that our users would utalize on a regualar basis.
+      The data shows that almost 90% of the respondents would take advantage of the augmented reality feature. </p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class = "container">
+  <div class = "row seventh">
+      <div class = "twelve columns">
+      <img src = "DataVis/Why_shop.png" style="width:250px;height:200px">
+      </div>
+  </div>
+  <div class = "row eighth">
+    <div class= "twelve columns">
+        This table is from Establishing and operating a community farmers market.
+        The table shows why people shop at farmers market with 46% reporting the reason they shop at farmers markets is for fresher and better quality produce.
+        While 14% claimed to shop for better prices and 13% for access to large quantities of produce.(inaptics)
+        Inapptics. “6 Proven Ways of Engaging Your App Users.” Medium, UX Planet, 11 Sept. 2017,
+        uxplanet.org/6-proven-ways-of-engaging-your-app-users-99d9c5bc5327.
+    </div>
+  </div>
+</div>
+<script>
+function likelihood() {
+  var pic = document.getElementById("pic");
+  if (pic.src.match("DataVis/App_likelyhood_pie")) {
+    pic.src = "DataVis/app_likelyhood.png";
+  }
+  else {
+    pic.src = "DataVis/App_likelyhood_pie.png";
+  }
+}
+
+function augmentedReality() {
+  var photo = document.getElementById("photo");
+  if (photo.src.match("DataVis/Augmented_reality_pie")) {
+    photo.src = "DataVis/Augmented_reality_chart.png";
+  }
+  else {
+    photo.src = "DataVis/Augmented_reality_pie.png";
+  }
+}
+
+</script>
+</body>
+<hr></hr>
+<p align = "center">This page was made by Seokbin Ma, Matthew Douglass, Erica Valenstein, Stephen Davis, and Ethan Eldridge. Layout by <a href = "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">Skeleton</a>.
+  </p>
+</html>
